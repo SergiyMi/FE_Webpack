@@ -7,7 +7,6 @@ function removeNotePriority({ target }) {
     if (target.nodeName !== 'I') return;
     if (target.parentNode.dataset.action === 'decrease-priority') {
         removeListItemPriority(target);
-        renderNoteList(refs.list, notepad.notes);
     }
 }
 
